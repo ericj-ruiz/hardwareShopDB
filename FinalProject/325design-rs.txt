@@ -1,0 +1,46 @@
+﻿Monica Arteaga
+Eric Ruiz
+Dr. Marjan Asadinia
+CS 325 - Fall 2022
+18 November 2022
+325 Project Design Draft Milestone: 
+
+
+Last Modified date: 12/7/2022
+
+
+
+
+Customer_service(CUST_ID, Cust_lname, Cust_fname,Cust_phone, pro_id)
+Foreign key(pro_id) references Pro_services
+
+
+Customer_email(CUST_ID, CUST_EMAIL)
+Foregin key (cust_id) references Customer_service
+
+
+In_store(SKU, Aisle, Bay,T_name, Quant, price, num_sold, last_cust_purchased)
+Foreign key(last_cust_purchased) references Customer_service(cust_id)
+
+
+Tool_rental(RENTAL_ID, Rent_cost, Rent_out, Rent_in, Rent_due, T_name, cust_id)
+Foreign key(cust_id) references Customer_service
+
+
+Pro_service(PRO_ID, Pro_lname,Pro_fname, Pro_email, Pro_discount, member_date)
+
+
+Pro_phones(PRO_ID, PRO_PHONE) 
+Foreign key(pro_id), references Pro_service
+
+
+Pro_beneficiarys(PRO_ID, PRO_BENEF)
+Foreign key(pro_id) references Pro_service
+
+
+Leads(INVOICE_NUM,Start_date, End_date,L_name, Total)
+
+
+Pro_requests_leads(PRO_ID, INVOICE_NUM)
+        Foreign key(pro_id) references Pro_service
+        Foreign key(invoice_num) references Leads

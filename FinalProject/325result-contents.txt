@@ -1,0 +1,188 @@
+Pro_service
+
+PRO_ID PRO_LNAME                 PRO_FNAME                 PRO_EMAIL                        PRO_DISC MEMBER_DA          
+------ ------------------------- ------------------------- -------------------------------- -------- ---------          
+P00001 Lee                       Rick                      ricklee@email.com                Gold     01-DEC-07          
+P00002 Adams                     Tyler                     tyleradams@email.com             Bronze   02-DEC-07          
+P00003 Smith                     Greg                      gregsmith@email.com              Silver   03-DEC-07          
+P00004 Green                     Nicol                     nicolgreen@email.com             Iron     04-DEC-07          
+P00005 Miller                    Paul                      paulmiller@email.com             Platinum 05-DEC-07          
+P00006 King                      Daniel                    danielking@email.com             Gold     06-DEC-07          
+P00007 Wood                      Tim                       timwood@email.com                Gold     07-DEC-07          
+P00008 White                     Lucy                      lucywhite@email.com              Gold     08-DEC-07          
+P00009 Lum                       Roger                     rogerlum@email.com               Gold     09-DEC-07          
+P00010 Johnson                   Jeff                      jeffjohnson@email.com            Platinum 10-DEC-07          
+
+10 rows selected.
+
+Pro_phones
+
+PRO_PHONE    PRO_ID                                                                                                     
+------------ ------                                                                                                     
+2101234567   P00010                                                                                                     
+2291234567   P00002                                                                                                     
+2511234567   P00005                                                                                                     
+3341234567   P00004                                                                                                     
+4321234567   P00009                                                                                                     
+8061234567   P00007                                                                                                     
+8081234567   P00006                                                                                                     
+8501234567   P00001                                                                                                     
+9121234567   P00003                                                                                                     
+9151234567   P00008                                                                                                     
+
+10 rows selected.
+
+Pro_beneficiarys
+
+PRO_BE PRO_ID                                                                                                           
+------ ------                                                                                                           
+C00001 P00006                                                                                                           
+C00002 P00007                                                                                                           
+C00003 P00008                                                                                                           
+C00004 P00009                                                                                                           
+C00005 P00010                                                                                                           
+C00016 P00001                                                                                                           
+C00017 P00002                                                                                                           
+C00018 P00003                                                                                                           
+C00019 P00004                                                                                                           
+C00020 P00005                                                                                                           
+
+10 rows selected.
+
+Leads
+
+INVO START_DAT END_DATE       TOTAL L_NAME                                                                              
+---- --------- --------- ---------- -------------------------                                                           
+0001 01-JAN-10 01-JUN-10     499.99 BathroomRepair                                                                      
+0002 10-JAN-10 10-JUN-10     199.99 FenceBuilt                                                                          
+0003 01-FEB-10 01-JUN-10     399.99 ACrepair                                                                            
+0004 11-FEB-10 01-JAN-11    7999.99 HotTubInstall                                                                       
+0005 20-JUN-10 01-SEP-10     299.99 SinkInstall                                                                         
+0006 01-JAN-11 01-JUN-11     599.99 YardRemodel                                                                         
+0007 17-JUL-11 01-DEC-11     999.99 CarpetInstall                                                                       
+0008 27-SEP-11 01-NOV-11     699.99 PorchBuilt                                                                          
+0009 01-JAN-12 01-JUN-12     499.99 SepticRepair                                                                        
+0010 01-FEB-12 01-DEC-12    1999.99 KitchenRemodel                                                                      
+
+10 rows selected.
+
+Pro_requests_leads
+
+PRO_ID INVO                                                                                                             
+------ ----                                                                                                             
+P00001 0001                                                                                                             
+P00002 0002                                                                                                             
+P00003 0003                                                                                                             
+P00004 0004                                                                                                             
+P00005 0005                                                                                                             
+P00006 0006                                                                                                             
+P00007 0007                                                                                                             
+P00008 0008                                                                                                             
+P00009 0009                                                                                                             
+P00010 0010                                                                                                             
+
+10 rows selected.
+
+Customer_service
+
+CUST_I CUST_LNAME                CUST_FNAME                CUST_PHONE PRO_ID                                            
+------ ------------------------- ------------------------- ---------- ------                                            
+C00006 Lee                       Rick                      8501234567 P00001                                            
+C00007 Adams                     Tyler                     2291234567 P00002                                            
+C00008 Smith                     Greg                      9121234567 P00003                                            
+C00009 Green                     Nicol                     3341234567 P00004                                            
+C00010 Miller                    Paul                      2511234567 P00005                                            
+C00011 King                      Daniel                    3151234567 P00006                                            
+C00012 Wood                      Tim                       6801234567 P00007                                            
+C00013 White                     Lucy                      5181234567 P00008                                            
+C00014 Lum                       Roger                     8381234567 P00009                                            
+C00015 Johnson                   Jeff                      6071234567 P00010                                            
+C00001 Gaucho                    Ronaldinho                9161234567                                                   
+C00002 Messi                     Lionel                    7071234567                                                   
+C00003 Santos                    Neymar                    3181234567                                                   
+C00004 Ronaldo                   Cristiano                 3371234567                                                   
+C00005 DosSantos                 Giovani                   2251234567                                                   
+C00016 Foden                     Phil                      6311234567                                                   
+C00017 Karimi                    Ali                       9341234567                                                   
+C00018 Amirir                    Vahid                     3631234567                                                   
+C00019 Torabi                    Mehdi                     5161234567                                                   
+C00020 Ghoddos                   Saman                     7161234567                                                   
+
+20 rows selected.
+
+Customer_email
+
+CUST_EMAIL                       CUST_I                                                                                 
+-------------------------------- ------                                                                                 
+alikarimi@email.com              C00017                                                                                 
+cristianoronaldo@email.com       C00004                                                                                 
+danielking@email.com             C00011                                                                                 
+giovanidossantos@email.com       C00005                                                                                 
+gregsmith@email.com              C00008                                                                                 
+jeffjohnson@email.com            C00015                                                                                 
+lionelmessi@email.com            C00002                                                                                 
+lucywhite@email.com              C00013                                                                                 
+mehditorabi@email.com            C00019                                                                                 
+neymarsantos@email.com           C00003                                                                                 
+nicolgreen@email.com             C00009                                                                                 
+paulmiller@email.com             C00010                                                                                 
+philfoden@email.com              C00016                                                                                 
+ricklee@email.com                C00006                                                                                 
+rogerlum@email.com               C00014                                                                                 
+ronaldinho@email.com             C00001                                                                                 
+samanghoddos@email.com           C00020                                                                                 
+timwood@email.com                C00012                                                                                 
+tyleradams@email.com             C00007                                                                                 
+vahidamirir@email.com            C00018                                                                                 
+
+20 rows selected.
+
+In_store
+
+SKU        AI BA T_NAME                         QUANT      PRICE   NUM_SOLD LAST_C                                      
+---------- -- -- ------------------------- ---------- ---------- ---------- ------                                      
+a000011111 01 01 Drill                              0      29.99         45 C00001                                      
+a000011112 01 02 DemolitionHammer                   0      69.99         45 C00002                                      
+a000011113 01 03 SafetyGlasses                      0       2.99         45 C00003                                      
+a000011114 01 04 NailGun                            0      79.99         45 C00004                                      
+a000011115 01 05 2x6x10Wood                         0      23.99         45 C00005                                      
+a000011116 02 01 BeltSander                        40      14.99          5 C00006                                      
+a000011117 02 02 Level                             40      12.99          5 C00007                                      
+a000011118 02 03 Chainsaw                          40      99.99          5 C00008                                      
+a000011119 02 04 ChopSaw                           40     199.99          5 C00009                                      
+a000011110 02 05 CrescentWrench                    40      29.99          5 C00010                                      
+a000011121 03 01 PaintKit                          40      10.99          4 C00011                                      
+a000011122 03 02 4x4x10wood                        40      17.99          4 C00012                                      
+a000011123 03 03 ReciprocatingSaw                  40     119.99          4 C00013                                      
+a000011124 03 04 AirCompressor                     40     129.99          4 C00014                                      
+a000011125 03 05 LawnMower                         40     124.99          4 C00015                                      
+a000011126 04 01 HeatGun                           40      17.99          3 C00016                                      
+a000011127 04 02 4x8plyWood                        40      59.99          3 C00017                                      
+a000011128 04 03 TapeMeasure                       40      23.99          3 C00018                                      
+a000011129 04 04 4x8dryWall                        40       8.99          3 C00019                                      
+a000011131 04 05 2x4x10wood                        40       7.99          3 C00020                                      
+a000011132 05 01 ShopVac                          200      99.99          1 C00001                                      
+a000011133 05 02 NailsBucket30lbs                 200      39.99          1 C00002                                      
+a000011134 05 03 ScrewsBucket30lbs                200      39.99          1 C00003                                      
+a000011135 05 04 Hammer                           200      20.99          1 C00004                                      
+a000011136 05 05 5gallonPaint                     200     100.99          1 C00005                                      
+
+25 rows selected.
+
+Tool_rental
+
+RE  RENT_COST RENT_OUT  RENT_IN   RENT_DUE  T_NAME                    CUST_I                                            
+-- ---------- --------- --------- --------- ------------------------- ------                                            
+z9      54.99 10-MAY-10 14-MAY-10 17-MAY-10 Lawnmower                 C00001                                            
+z8      24.99 10-JUN-10 14-JUN-10 17-JUN-10 Drill                     C00002                                            
+z7      29.99 15-JUN-10 20-JUN-10 24-JUN-10 DemolitionHammer          C00003                                            
+z6      10.99 17-JUN-10 25-JUN-10 26-JUN-10 PowerScrewdriver          C00004                                            
+z5      29.99 10-JUL-10 14-JUL-10 17-JUL-10 NailGun                   C00005                                            
+z4      24.99 17-JUL-10 24-JUL-10 27-JUL-10 AngleGrinder              C00006                                            
+z3      24.99 10-AUG-10 14-AUG-10 17-AUG-10 BeltSander                C00007                                            
+z2      49.99 10-SEP-10 14-SEP-10 17-SEP-10 Chainsaw                  C00008                                            
+z1      49.99 10-OCT-10 14-OCT-10 17-OCT-10 ChopSaw                   C00009                                            
+z0      29.99 10-DEC-10 14-DEC-10 17-DEC-10 AirCompressor             C00010                                            
+
+10 rows selected.
+

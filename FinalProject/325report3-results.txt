@@ -1,0 +1,19 @@
+
+Thu Dec 08                                                                                                     page    1
+                                             Customers and the Tools Rented
+
+Customer ID  Name                                                 Tool                            Cost                  
+------------ ---------------------------------------------------- ------------------------- ----------                  
+C00006       Lee, Rick                                            AngleGrinder                  $24.99                  
+C00007       Adams, Tyler                                         BeltSander                    $24.99                  
+C00008       Smith, Greg                                          Chainsaw                      $49.99                  
+C00009       Green, Nicol                                         ChopSaw                       $49.99                  
+C00010       Miller, Paul                                         AirCompressor                 $29.99                  
+C00001       Gaucho, Ronaldinho                                   Lawnmower                     $54.99                  
+C00002       Messi, Lionel                                        Drill                         $24.99                  
+C00003       Santos, Neymar                                       DemolitionHammer              $29.99                  
+C00004       Ronaldo, Cristiano                                   PowerScrewdriver              $10.99                  
+C00005       DosSantos, Giovani                                   NailGun                       $29.99                  
+
+10 rows selected.
+

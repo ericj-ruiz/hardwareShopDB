@@ -1,0 +1,82 @@
+Query 1
+
+PRO_ID Last Name                 Beneficiarys    Last Name                      
+------ ------------------------- --------------- -------------------------      
+P00006 King                      C00001          Gaucho                         
+P00007 Wood                      C00002          Messi                          
+P00008 White                     C00003          Santos                         
+P00009 Lum                       C00004          Ronaldo                        
+P00010 Johnson                   C00005          DosSantos                      
+P00001 Lee                       C00016          Foden                          
+P00002 Adams                     C00017          Karimi                         
+P00003 Smith                     C00018          Amirir                         
+P00004 Green                     C00019          Torabi                         
+P00005 Miller                    C00020          Ghoddos                        
+
+10 rows selected.
+
+Query 2
+
+SKU        Tool Name                 Quantity      PRICE                        
+---------- ------------------------- -------- ----------                        
+a000011132 ShopVac                        200      99.99                        
+a000011133 NailsBucket30lbs               200      39.99                        
+a000011134 ScrewsBucket30lbs              200      39.99                        
+a000011135 Hammer                         200      20.99                        
+a000011136 5gallonPaint                   200     100.99                        
+
+
+5 rows updated.
+
+
+SKU        Tool Name                 Quantity      PRICE                        
+---------- ------------------------- -------- ----------                        
+a000011132 ShopVac                        200         50                        
+a000011133 NailsBucket30lbs               200         20                        
+a000011134 ScrewsBucket30lbs              200         20                        
+a000011135 Hammer                         200       10.5                        
+a000011136 5gallonPaint                   200       50.5                        
+
+Query 3
+
+Aisle AVG(PRICE)                                                                
+----- ----------                                                                
+03         80.79                                                                
+02         71.59                                                                
+01         41.39                                                                
+05          30.2                                                                
+04         23.79                                                                
+
+Query 4
+
+Customer ID  Last Name                 Tool Name                      PRICE     
+------------ ------------------------- ------------------------- ----------     
+C00009       Green                     ChopSaw                       199.99     
+
+Query 5
+
+Total Price Tools Bought                                                        
+----------- ------------                                                        
+     127.97            3                                                        
+
+Query 6
+
+Tool Rental Revenue Rentals back in Time                                        
+------------------- --------------------                                        
+              330.9                   10                                        
+
+Query 7
+
+Total Revenue Tools Sold                                                        
+------------- ----------                                                        
+     13226.15        290                                                        
+
+Query 8
+
+Total Price Tools Rented                                                        
+----------- ------------                                                        
+     109.97            3                                                        
+
+
+Rollback complete.
+
